@@ -1,0 +1,180 @@
+x@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.navigation {
+    width: ;}
+
+.img {
+  width: 2em;
+  border-radius: 50px;
+  float: left;
+}
+
+.logout {
+  font-size: 0.8em;
+  font-family: "Nexa-Bold", sans-serif, nexa;;
+  position: relative;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity 0.45s;
+  -webkit-transition: opacity 0.35s;
+}
+
+.button {
+  text-decoration: none;
+  float: right;
+  padding: 12px;
+  color: darkgreen;
+  width: 1em;
+  transition: width 0.35s;
+  -webkit-transition: width 0.35s;
+  overflow: hidden;
+}
+
+a:hover {
+  width: 6em;
+}
+
+a:hover .logout {
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+body {
+    background-color: aliceblue;
+    background-image: url(https://d38kd5vqa6ilbw.cloudfront.net/nl/-/media/Images/Public/Backgrounds/NL_20151020_homepage_mainpromo.jpg?sc=0.666&amp;useCustomFunctions=1&amp;vs=1&amp;d=20151019T135918Z&amp;hash=1BB65F964057B66F6FEDDE0706C50FC6F6AA99EC);
+    background-repeat: no-repeat;
+    background-size: 100% 30em;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 3em;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 2.5em;
+}
+
+.verhalen {
+    height: 2em;
+    padding-top: 0.4em
+}
+
+.login {
+    padding-top: 0.5em;
+    height: 2em;
+    float: right
+}
+
+
+/*_____________FORM_____________*/
+
+form {
+    background-color: #99ddff;
+    text-align: center;
+    padding: 0.4em;
+}
+
+select {
+    height: 1.5rem;
+    margin-bottom: 0.4em;
+    width: 22%;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: #29129C;
+    background-color: white;
+    border-style: none;
+}
+
+[type="search"] {
+    display: inline-flex;
+    width: 40%;
+    height: 1.5rem;
+    font-family: "Nexa Light", Nexa, sans-serif;
+    background-color: white;
+    color: #29129C;
+    border-radius: 0.8em 0 0 0.8em;
+    border: none;
+    padding-left: 1em;
+    margin-right: -1em
+}
+
+form button {
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    border-radius: 0 0.8em 0.8em 0;
+    border-style: none;
+    background-color: #29129C;
+    color: white;
+    height: 1.5rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+article {
+    /*    background-color: #99ddff;*/
+    background-color: white;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 1.5rem;
+    padding-bottom: 1.5em;
+    max-width: 20em;
+}
+
+article img {
+    max-width: 100%;
+    background-size: cover;
+    margin: auto;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+article h3,
+p {
+    margin-left: 1.3em;
+    padding-bottom: 1em;
+    padding-right: 2.5em;
+}
+
+article h3 {
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    font-size: 1.2em
+}
+
+article p {
+    font-family: "Nexa Light", Nexa, sans-serif;
+    margin-left: 1.5em;
+}
+
+article button {
+    margin-left: 1em;
+    font-size: 1em;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: white;
+    background-color: #e6124f;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 1em;
+    box-shadow: 0 3px #a8043b;
+    border-style: none;
+}

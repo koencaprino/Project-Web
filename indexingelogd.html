@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/style.css">
-<link rel="stylesheet" href="../CSS/ingelogd.css">
+    <link rel="stylesheet" href="../CSS/ingelogd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="../IMG/logo.jpg">
     <link rel="stylesheet" href="../CSS/smalscreendrop.css">
@@ -16,7 +16,7 @@
     <header>
         <nav>
             <a href="indexingelogd.html"><img class="logo" src="../IMG/logo.jpg" alt="transavia"></a>
-            <a href="indexingelogd.html"> <img class="verhalen" src="../IMG/99verhalen.png" alt="99verhalen"></a>
+            <a href="indexingelogd.html"> <img class="vooronderweg" src="../IMG/99verhalen.png" alt="99verhalen"></a>
             <a class="button" href="index.html">
                 <img class="img" alt="login" src="../IMG/loginicon-01.png">
 
@@ -25,7 +25,7 @@
             </a>
         </nav>
         <form>
-<!--
+            <!--
             <select>
                 <option disabled="disabled" selected="selected"> Genre </option>
                 <option> Humor </option>
@@ -35,10 +35,10 @@
             </select>
 -->
 
-           <div class="dropdown">
-  <button class="dropbtn">Stijl</button>
-  <div class="dropdown-content">
-     <label>
+            <div class="dropdown">
+                <button class="dropbtn">Stijl</button>
+                <div class="dropdown-content">
+                    <label>
                         <input type="checkbox"> drama</label>
 
                     <label>
@@ -52,8 +52,9 @@
 
                     <label>
                         <input type="checkbox"> anders</label>
-  </div>
-</div><script src="../JS/smalscreendrop.js"></script>
+                </div>
+            </div>
+            <script src="../JS/smalscreendrop.js"></script>
             <select>
                 <optgroup label="Filter">
                     <option value="filter"> Filter </option>
@@ -79,10 +80,14 @@
                 </optgroup>
             </select>
             <input type="search" name="zoek" placeholder=" Zoek verhaal..">
-            <button type="submit">zoek</button>
+            <button type="button" id="zoek">zoek</button>
         </form>
-    </header>
 
+    </header>
+ <div id="laden-overlay" class="hidden">
+        <img src="../IMG/laden.gif" alt="laden gif">
+        <script src="../JS/micro2.js"></script>
+    </div>
     <main>
 
         <h2>Mijn verhalen</h2>
@@ -92,35 +97,29 @@
                 <h3>Paranoia</h3>
                 <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel....</p>
                 <footer class="firstfooter">
-                <button type="button">Lees</button>
+                    <a href="paranoia.html">Lees </a>
 
-
-                    <section class="dancer">
-                        <button>
-                            &#xf08a;
-                        </button>
-                    </section>
-                    <script src="../JS/micro.js"></script>
                     <ul>
-                        <li> 100</li>
+                        <li> <img class="like" src="../IMG/liked.png" alt="like"> 100</li>
                         <li> &#xf0e5; 3</li>
-                        <li> &#xf067; </li>
+                        <li class="add"> &#xf067; </li>
 
                     </ul>
 
-            </footer>
+                </footer>
             </article>
             <article>
                 <img src="../IMG/StonedIcon-01.png" alt="Stoned">
                 <h3>Stoned</h3>
                 <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep.....</p>
-                <footer >
-                    <button type="button">Lees</button>
+                <footer>
+                    <a href="stoned.html">Lees </a>
 
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
-                        <li> &#xf067; </li>
+                        <li> <img class="like" src="../IMG/liked-01.png" alt="like"> 88</li>
+                        <li> &#xf0e5; 2</li>
+                        <li class="add"> &#xf067; </li>
+
                     </ul>
                 </footer>
             </article>
@@ -129,10 +128,10 @@
                 <h3>Iphone</h3>
                 <p>Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen.....</p>
                 <footer>
-                    <button type="button">Lees</button>
+                    <a href="Iphone.html">Lees </a>
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
+                        <li> <img class="like" src="../IMG/liked-01.png" alt="like"> 20</li>
+                        <li> &#xf0e5; 2</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
@@ -144,8 +143,8 @@
                 <footer>
                     <button type="button">Lees</button>
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
+                        <li> <img class="like" src="../IMG/liked-01.png" alt="like"> 43</li>
+                        <li> &#xf0e5; 0</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
@@ -158,61 +157,61 @@
             <!--<article><h1>Stijl oefeningen door Max J. Molovich.</h1></article>-->
 
             <article>
-                <img src="../IMG/deCock-01.png" alt="paranoia">
+                <img src="../IMG/deCock-01.png" alt="decock">
                 <h3>De Cock en het raadsel van het verdwenen boek</h3>
                 <p>Stationsplein, 12.00 uur in de middag De Cock met C-O-C-K. stapte de bus uit. In de krui.....</p>
                 <footer>
-                    <button type="button"><a>Lees</a></button>
+                    <button type="button">Lees</button>
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
+                        <li> <img class="like" src="../IMG/like-01.png" alt="like"> 10</li>
+                        <li> &#xf0e5; 1</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
             </article>
 
             <article>
-                <img src="../IMG/Blind-01.png" alt="Stoned">
+                <img src="../IMG/Blind-01.png" alt="blind">
                 <h3>Blind</h3>
                 <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk.....</p>
                 <footer>
-                    <button type="button"><a>Lees</a></button>
+                    <button type="button">Lees</button>
                     <ul>
-                        <li> &#xf08a; 100</li>
+                        <li> <img class="like" src="../IMG/like-01.png" alt="like"> 21</li>
                         <li> &#xf0e5; 3</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
             </article>
             <article>
-                <img src="../IMG/dagblad-01.png" alt="Iphone">
+                <img src="../IMG/dagblad-01.png" alt="dagblad">
                 <h3>Regionaal dagblad</h3>
                 <p>De klok slaat twaalf uur in de middag als de beruchte blogger Max J. Molovich op het Stationsplein uit het gemeen.....</p>
                 <footer>
-                    <button type="button"><a>Lees</a></button>
+                    <button type="button">Lees</button>
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
+                        <li> <img class="like" src="../IMG/like-01.png" alt="like"> 7</li>
+                        <li> &#xf0e5; 0</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
             </article>
             <article>
-                <img src="../IMG/6-01.png" alt="Iphone">
+                <img src="../IMG/6-01.png" alt="six">
                 <h3>Six words story</h3>
                 <p>* Omdat deze stijloefening niet alleen qua vorm, maar ook qua inhoud zo overduidelijk knipoogt naar de moeder.....</p>
                 <footer>
-                    <button type="button"><a>Lees</a></button>
+                    <button type="button">Lees</button>
                     <ul>
-                        <li> &#xf08a; 100</li>
-                        <li> &#xf0e5; 3</li>
+                        <li> <img class="like" src="../IMG/like-01.png" alt="like"> 2</li>
+                        <li> &#xf0e5; 7</li>
                         <li> &#xf067; </li>
                     </ul>
                 </footer>
             </article>
         </div>
     </main>
-
+    <script src="../JS/micro.js"></script>
 </body>
 
 </html>

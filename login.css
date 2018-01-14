@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: Nexa-Light;
+    src: url(../fonts/Nexa Light.otf);
+}
+
+@font-face {
+    font-family: Nexa Bold;
+    src: url(../fonts/Nexa Bold.otf);
+}
+
+
+/*______________NAV_____________*/
+
+body {
+    background-image: url(https://www.transavia.com/nl/-/media/Images/Public/Backgrounds/Campaigns-NL/week50-header-nl-reversed.jpg?sc=0.666&amp;useCustomFunctions=1&amp;hash=D55B3C6EFFB97E753FE5D44E41EEE022E8FB53FE);
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 2.5em;
+}
+
+.verhalen {
+    height: 2em;
+    padding-top: 0.4em
+}
+
+.login {
+    padding-top: 0.5em;
+    height: 2em;
+}
+
+
+/* ------------- Login ----------- */
+
+main {
+    background-color: white;
+    margin: 1em;
+    margin-top: 3em;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+legend {
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0.5em;
+    color: #29129C;
+}
+
+input {
+    font-family: "Nexa Light", Nexa, sans-serif;
+    background-color: aliceblue;
+    color: #29129C;
+    border-radius: 1em;
+    border-color: #29129C;
+    border-width: thin;
+    height: 1.5rem;
+    width: 70%;
+    max-width: 30em;
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    margin-bottom: 1em;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    margin: auto;
+    padding-left: 1em;
+}
+
+input:focus {
+  transform: scale(1.02, 1.02);
+}
+input:valid {
+  border-color:green;
+border: solid .1em green;
+    background-color: rgba(0, 214, 108, .3)
+}
+
+
+
+
+button {
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: white;
+    font-size: 1em;
+    background-color: #e6124f;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 1em;
+    box-shadow: 0 3px #a8043b;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+}
+
+button:hover {
+    background-color: #f23675
+}
+
+button:active {
+    background-color: #e6124f;
+    box-shadow: 0 0.3em #a8043b;
+    transform: translateY(2px);
+}
+
+button a {
+    text-decoration: none;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+p,
+a {
+    font-family: "Nexa Light", Nexa, sans-serif;
+}
+
+main a:nth-child(2) {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-around;
+    color: #e6124f;
+    margin-bottom: 1em;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+p a {
+    color: #e6124f;
+    padding-left: .5em;
+}
+
+
+/*
+
+AANMELDEN
+*/
+
+.aanmeldform label {
+    /*    display: flex;*/
+}
+
+.aanmeldform input {
+    max-width: 20em;
+}
+
+
+/*
+.aanmelden {
+display: flex;
+}
+*/
+
+@media screen and ( min-width: 30em) {
+    main {
+        background-color: white;
+        /*
+    margin: 10%;
+    margin-top: 3em;
+*/
+        width: 70%;
+        margin-left: 14%;
+        border-radius: 1em;
+        padding: 1em;
+    }
+}
+
+@media screen and ( min-width: 60em) {
+    main {
+        width: 50%;
+        margin-left: 24%;
+    }
+}
+
+@media screen and ( min-width: 80em) {
+    body {
+        background-size: cover;
+    }
+}

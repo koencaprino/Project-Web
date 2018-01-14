@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+
+
+article {
+    /*    background-color: #99ddff;*/
+    background-color: white;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 1.5rem;
+    padding-bottom: 1.5em;
+    max-width: 20em;
+}
+
+article img {
+    max-width: 100%;
+    background-size: cover;
+    margin: auto;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+article h3,
+p {
+    margin-left: 1.3em;
+    padding-bottom: 1em;
+    padding-right: 2.5em;
+}
+
+article h3 {
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    font-size: 1.2em
+}
+
+article p {
+    font-family: "Nexa Light", Nexa, sans-serif;
+    margin-left: 1.5em;
+}
+
+article button {
+    margin-left: 1em;
+    font-size: 1em;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: white;
+    background-color: #e6124f;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 1em;
+    box-shadow: 0 3px #a8043b;
+    border-style: none;
+}
+
+article button:hover {
+    background-color: #f23675
+}
+
+article button:active {
+    background-color: #e6124f;
+    box-shadow: 0 0.3em #a8043b;
+    transform: translateY(2px);
+}
+
+h3 {
+    font-size: 1em;
+    padding-top: 0.5em;
+    color: #29129C;
+}
+
+footer {
+    padding-right: em;
+    font-family: "Nexa Light", Nexa, sans-serif;
+    font-size: 1em;
+    width: 60%;
+    display: flex;
+    margin-top: ;
+    padding-bottom: ;
+}
+
+footer ul {
+    display: flex;
+    margin-top: 1em;
+    font-family: "FontAwesome", sans-serif;
+    margin-left: 2em
+}
+
+li {
+    width: 5em;
+    color: #29129C;
+    font-size: 0.8em;
+}
+
+li.dancer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    height: 2em;
+    padding:  ;
+    margin: auto;
+    top: 1em;
+    transition: all .5s;
+    animation: 3s infinite;
+}

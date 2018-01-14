@@ -1,0 +1,69 @@
+.dropbtn {
+    background-color: rgba( 0, 0, 0, 0);
+    height: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+    color: #29129C;
+    display: flex;
+    padding-left: .7em
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 0.3em;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100%;
+    margin: 0;
+    border-radius: 0em 0em .3em .3em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    width: 100%;
+    color: #29129C;
+    border-radius: 0.3em .3em 0em 0em;
+}
+
+label {
+    display: flex;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    color: #29129C;
+    font-size: 0.8em;
+    padding-top: .3em;
+    padding-left: .3em;
+}
+
+input[type='checkbox']{
+margin-right: .5em;
+    margin-top: -.2em;
+}
+
+
+
+}
+
+@media screen and ( min-width: 62em) {
+    .dropdown {
+        width: 20%;
+    }
+}

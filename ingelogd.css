@@ -1,0 +1,62 @@
+/*------------INTERACTION-----------*/
+
+.img {
+    width: 2.2em;
+    float: left;
+}
+
+.logout {
+    font-size: 0.8em;
+    font-family: "Nexa Bold", Nexa, sans-serif;
+    margin-top: 1em;
+    bottom: -1em;
+    overflow: hidden;
+    transition: opacity 0.45s;
+    -webkit-transition: opacity 0.35s;
+}
+
+.button {
+    text-decoration: none;
+    float: right;
+    padding: 0.5em;
+    padding-right: 1.2em;
+    color: rgba(0, 214, 108, 1);
+    width: 1em;
+    transition: width 0.35s;
+    -webkit-transition: width 0.35s;
+    overflow: hidden;
+}
+
+nav a:nth-child(3):hover {
+    width: 6em;
+}
+
+nav a:nth-child(3):hover .logout {
+    opacity: 0.9;
+}
+
+nav {
+
+    height: 2.75em;
+
+}
+
+h2:nth-child(3) {
+margin-top: .8em;
+}
+
+
+
+/*
+.firstfooter ul {
+
+    padding-left: 0em;
+}
+*/
+
+/*
+.firstfooter ul li {
+width: 4em;
+}
+*/
+
