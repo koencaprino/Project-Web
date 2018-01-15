@@ -27,17 +27,16 @@
         <form>
             <!--
             <select>
-                <option disabled="disabled" selected="selected"> Genre </option>
+                <option disabled="disabled" selected="selected"> Stijl </option>
                 <option> Humor </option>
                 <option> Fantasie </option>
                 <option> Romantiek </option>
                 <option> Anders </option>
             </select>
 -->
-
             <div class="dropdown">
-                <button class="dropbtn">Stijl</button>
-                <div class="dropdown-content">
+                <button type="button" onclick="myFunction()" class="dropbtn">Stijl</button>
+                <div id="myDropdown" class="dropdown-content">
                     <label>
                         <input type="checkbox"> drama</label>
 
@@ -52,16 +51,32 @@
 
                     <label>
                         <input type="checkbox"> anders</label>
+
+                    <label>
+                        <input type="checkbox"> vaag </label>
+
+                    <label>
+                        <input type="checkbox"> ingewikkeld </label>
+
+                    <label>
+                        <input type="checkbox"> simpel </label>
+
+                    <label>
+                        <input type="checkbox"> doordacht </label>
                 </div>
             </div>
             <script src="../JS/smalscreendrop.js"></script>
+
             <select>
-                <optgroup label="Filter">
-                    <option value="filter"> Filter </option>
-                    <option> test 1 </option>
-                    <option> test 2 </option>
-                </optgroup>
+                <option disabled="disabled" selected="selected">Lengte</option>
+                <option> 0 - 500 woorden (max. 2 minuten) </option>
+                <option> 500 - 1000 woorden (max. 4 minuten) </option>
+                <option> 1000 - 1500 woorden (max. 6 minuten) </option>
+                <option> 1500+ woorden (min. 6+ minuten) </option>
+
             </select>
+
+
             <select>
                 <option disabled="disabled" selected="selected">Sorteer op</option>
                 <option value="Sorteer op"> kort - lang </option>
@@ -74,17 +89,17 @@
                     <option value="Sorteer op"> veel - weinig </option>
                     <option> weinig - veel </option>
                 </optgroup>
-                <optgroup label="Toevoegingsdatum">
-                    <option value="Sorteer op"> nieuw - oud </option>
-                    <option> oud - nieuw </option>
+                <optgroup label="Populariteit">
+                    <option value="Sorteer op"> populair - niet populair </option>
+                    <option> niet populair - populair </option>
                 </optgroup>
             </select>
             <input type="search" name="zoek" placeholder=" Zoek verhaal..">
             <button type="button" id="zoek">zoek</button>
-        </form>
 
+        </form>
     </header>
- <div id="laden-overlay" class="hidden">
+    <div id="laden-overlay" class="hidden">
         <img src="../IMG/laden.gif" alt="laden gif">
         <script src="../JS/micro2.js"></script>
     </div>
@@ -102,7 +117,7 @@
                     <ul>
                         <li> <img class="like" src="../IMG/liked.png" alt="like"> 100</li>
                         <li> &#xf0e5; 3</li>
-                        <li class="add"> &#xf067; </li>
+                        <li> &#xf067; </li>
 
                     </ul>
 
@@ -118,7 +133,7 @@
                     <ul>
                         <li> <img class="like" src="../IMG/liked-01.png" alt="like"> 88</li>
                         <li> &#xf0e5; 2</li>
-                        <li class="add"> &#xf067; </li>
+                        <li> &#xf067; </li>
 
                     </ul>
                 </footer>
