@@ -7,6 +7,7 @@
 
 
 /*Bron https://codepen.io/jeremyloyd/pen/EaavQb?q=log%20out&order=popularity&depth=everything&show_forks=false*/
+
 .logout {
     font-size: 0.8em;
     font-family: "Nexa Bold", Nexa, sans-serif;
@@ -33,13 +34,48 @@ nav a:nth-child(3):hover {
     width: 6em;
 }
 
-nav a:nth-child(3):hover .logout {
+nav a:nth-child(3):hover .logout {}
+
+h2:nth-child(3) {
+    margin-top: .8em;
+}
+
+footer li{
+margin-right: 0em;
 }
 
 
 
-h2:nth-child(3) {
-margin-top: .8em;
+li.dancer {
+
+    display:flex;
+    flex-direction: column;
+
+    margin:auto;
+  top:1em;
+
+    transition:all 2s;
+}
+
+li.dancing {
+    transform:scale(1.5) rotate(-405deg) ;
+  /height:40em
+
+}
+
+
+
+li > button{
+font-family: "FontAwesome", sans-serif;
+    align-self: center;
+  font-size: 1em;
+  border-style:none;
+  color: #29129C;
+left: 2em;
+}
+
+.wolkje {
+width: 2.9em;
 }
 
 
@@ -51,9 +87,9 @@ margin-top: .8em;
 }
 */
 
+
 /*
 .firstfooter ul li {
 width: 4em;
 }
 */
-
